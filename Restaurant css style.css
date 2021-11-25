@@ -1,0 +1,300 @@
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1000px;
+   margin: auto;
+   /* font-family: "Trirong", serif; 
+   font-family: "Sofia", sans-serif;*/
+}
+
+.row{
+    width: 100%;
+}
+.row::after{
+    clear: both;
+    display: table;
+    content: '';
+}
+
+[class*="col-"]{
+    float: left;
+    padding:15px ;
+
+}
+
+
+[class*="col-"]{
+    width: 100%;
+}
+
+/* header starts  here*/
+
+header{
+    background-color: darkcyan;
+    padding: 0% 1%;
+    text-align: center;
+
+
+
+
+}
+.logo{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50px;
+    border: 1px solid yellow;
+
+}
+.navbar ul li{
+    display: block;
+
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    line-height: 50px;
+    display: block;
+    padding: 0% 10px;
+    text-transform: uppercase;
+    font-size:0.9rem ;
+    font-weight: bolder;
+    font-family: "Trirong", serif; 
+    transition: 0.4s;
+}
+.navbar ul li a:hover{
+
+    border-radius: 100px;
+    background-color: black;
+    opacity: 0.5;
+}
+
+
+/* header ends here*/
+/* banner starts here */
+.banner-section{
+    background-image: url(Background-image.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+  
+
+}
+.banner-contents{
+    padding: 50px 10px;
+    text-align: center;
+    color: white;
+   margin: 10px 0px;
+
+}
+.banner-contents h1{
+   width: 100%;
+   margin: 15px auto;
+   font-size: 2rem;
+  background-color: rebeccapurple;
+  border-radius: 10px;
+
+  font-family: "Sofia", sans-serif;
+  
+
+}
+.banner-contents p{
+    width: 300px;
+    margin: 15px auto;
+    background-color: seagreen;
+    font-size: 1.5rem;
+    border-radius: 10px;
+
+
+}
+.banner-contents .btn{
+    border: none;
+background-color: violet;
+ font-size: 1.3rem;
+ font-weight: bolder;
+ border-radius: 10px;
+color: white;
+width: 160px;
+padding: 5px;
+transition: 0.4s;
+text-transform: uppercase;
+
+ 
+}
+.banner-contents .btn:hover{
+    background-color: brown;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+/* banner ends here */
+
+/* about-us section starts here */
+#about-us{
+    padding: 1%;
+}
+.about-us-contains{
+    text-align: center;
+}
+.about-us-contains h3{
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-weight: bolder;
+   
+}
+.about-us-contains p{
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+    text-align: justify;
+
+}
+
+/* about-us section ends here */
+
+/* food menu section starts here */
+
+#menu-section{
+    padding: 1%;
+
+}
+.card-body{
+    text-align: center;
+    background:#002050;
+ 
+}
+.card-body img{
+    display: block;
+    margin: 0% auto;
+    
+}
+.item-desc{
+    background: rgb(164,164,164);
+    text-align: center;
+}
+.item-name{
+    background-color: green;
+    color: white;
+    padding: 10px;
+    font-weight: bolder;
+
+}
+.item-desc > p{
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 8px;
+}
+.card{
+    transition: 0.4s;
+ 
+   
+}
+.card:hover{
+  transform: scale(1.1);  
+}
+ 
+
+
+
+
+
+
+
+
+
+
+/* food menu section ends here */
+
+/* contact style starts here */
+
+
+#contact{
+    padding: 1%;
+    background-color: blueviolet;
+}
+.conact-detailes{
+    color: white;
+    text-align: center;
+    padding: 20px 0px;
+
+}
+.map{
+width: 100%;
+height: 250px;
+
+}
+.conact-detailes h3{
+    font-size: 1.2rem;
+    font-weight: bolder;
+
+}
+
+
+
+
+
+/* contact style ends here */
+
+
+
+/* small divice */
+
+@media (min-width:576px) {
+.col-sm-1 {width: 8.33%;}
+.col-sm-2 {width: 16.66%;}
+.col-sm-3 {width: 25%;}
+.col-sm-4 {width: 33.33%;}
+.col-sm-5 {width: 41.66%;}
+.col-sm-6 {width: 50%;}
+.col-sm-7 {width: 58.33%;}
+.col-sm-8 {width: 66.66%;}
+.col-sm-9 {width: 75%;}
+.col-sm-10 {width: 83.33%;}
+.col-sm-11 {width: 91.66%;}
+.col-sm-12 {width: 100%;}
+}
+/* medium divice */
+
+@media (min-width:768px) {
+    .col-md-1 {width: 8.33%;}
+    .col-md-2 {width: 16.66%;}
+    .col-md-3 {width: 25%;}
+    .col-md-4 {width: 33.33%;}
+    .col-md-5 {width: 41.66%;}
+    .col-md-6 {width: 50%;}
+    .col-md-7 {width: 58.33%;}
+    .col-md-8 {width: 66.66%;}
+    .col-md-9 {width: 75%;}
+    .col-md-10 {width: 83.33%;}
+    .col-md-11 {width: 91.66%;}
+    .col-md-12 {width: 100%;}
+    }
+
+/* laptop/desktop/large divice */
+
+    @media (min-width: 992px) {
+        .col-lg-1 {width: 8.33%;}
+        .col-lg-2 {width: 16.66%;}
+        .col-lg-3 {width: 25%;}
+        .col-lg-4 {width: 33.33%;}
+        .col-lg-5 {width: 41.66%;}
+        .col-lg-6 {width: 50%;}
+        .col-lg-7 {width: 58.33%;}
+        .col-lg-8 {width: 66.66%;}
+        .col-lg-9 {width: 75%;}
+        .col-lg-10 {width: 83.33%;}
+        .col-lg-11 {width: 91.66%;}
+        .col-lg-12 {width: 100%;}
+        }
